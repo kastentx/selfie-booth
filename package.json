@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@tensorflow/tfjs": "^0.14.1",
     "b64-to-blob": "^1.2.19",
     "file-saver": "^2.0.0",
     "react": "^16.6.3",
