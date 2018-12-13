@@ -1,13 +1,14 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 import './CaptureButton.css'
 
 const CaptureButton = props => {
   return (
-    <span
+    <Button
       onClick={ props.handleClick }
       className="capture-button">
       Capture
-    </span>
+    </Button>
   )
 }
 

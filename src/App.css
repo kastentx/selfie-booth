@@ -14,9 +14,6 @@
 }
 
 .image-display, video {
-  width: 640px;
-  height: 480px;
-  margin: 4%;
   object-fit: contain;
 }
 

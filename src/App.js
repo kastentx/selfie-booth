@@ -8,12 +8,13 @@ import { saveAs } from 'file-saver'
 import B64toBlob  from 'b64-to-blob'
 import { loadTFJSModel, cleanTFJSResponse, getScaledSize, OBJ_MAP } from './utils'
 import './App.css'
+import ContentDisplay from './ContentDisplay';
 
 const initialState = {
   time: '3',
   timerStatus: 'stopped',
   intervalID: '',
-  imgSrc: '',
+  captureData: '',
   peopleData: ''
 }
 
@@ -33,7 +34,7 @@ class App extends Component {
   }
 
   handleDownload = () => {
-    saveAs(B64toBlob(this.state.imgSrc.split(',')[1], 'image/png'), `max-selfie.png`)
+    saveAs(B64toBlob(this.state.captureData.split(',')[1], 'image/png'), `max-selfie.png`)
   }
 
   handleReset = () => {
@@ -50,7 +51,7 @@ class App extends Component {
       const imgData = this.camRef.current.getScreenshot()
       this.setState({
         ...initialState,
-        imgSrc: imgData
+        captureData: imgData
       })
       this.processIMAGE(imgData)
     }
@@ -133,7 +134,7 @@ class App extends Component {
           reject(`${ e } - image load error`)
         }
       }
-      img.src = this.state.imgSrc
+      img.src = this.state.captureData
     })
   }
 
@@ -145,24 +146,23 @@ class App extends Component {
             timerStatus={ this.state.timerStatus }
             time={ this.state.time } />
           {
-            this.state.imgSrc ?
+            this.state.captureData ?
             <div className='content-wrapper'>
-            <div>
-              <img 
-                alt='a webcam capture'
-                className='image-display'
-                src={ this.state.peopleData ? this.state.peopleData : this.state.imgSrc } />    
-            </div>
-            <div>
-              <ImageButtons 
-                imgSrc={ this.state.imgSrc }
-                handleReset={ this.handleReset }
-                handleDownload={ this.handleDownload } />
-            </div>
+              <ContentDisplay
+                captureData={ this.state.captureData } 
+                peopleData={ this.state.peopleData } />            
+              <div>
+                <ImageButtons 
+                  captureData={ this.state.captureData }
+                  handleReset={ this.handleReset }
+                  handleDownload={ this.handleDownload } />
+              </div>
             </div>
           :
             <div>
               <Webcam
+                height='480'
+                width='640'
                 screenshotFormat='image/png'
                 className='webcam-display'
                 audio={ false }
