@@ -1,0 +1,15 @@
+.reset-button {
+  background-color: green;
+  color: red;
+  margin: 2%;
+  padding: 2%;
+  cursor: pointer;
+}
+
+.download-button {
+  background-color: green;
+  color: red;
+  margin: 2%;
+  padding: 2%;
+  cursor: pointer;
+}

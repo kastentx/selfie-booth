@@ -1,0 +1,7 @@
+.capture-button {
+  background-color: green;
+  color: red;
+  margin: 2%;
+  padding: 2%;
+  cursor: pointer;
+}
