@@ -1,0 +1,12 @@
+.konvaMain {
+  margin: auto !important;
+  margin-bottom: 0 !important;
+}
+
+.konvaMain > .konvajs-content {
+  margin: auto !important;
+}
+.konvaMain > .konvajs-content > canvas {
+  border-radius: 4px;
+  background-color: #2f2d2e !important;
+}
