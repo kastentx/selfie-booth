@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/holiday-photo-booth/static/js/runtime~main.3442ee4d.js"
   },
   {
-    "revision": "9040f9abdc21d55ee6b9",
-    "url": "/holiday-photo-booth/static/js/main.9040f9ab.chunk.js"
+    "revision": "e54d9dc440644685f6d1",
+    "url": "/holiday-photo-booth/static/js/main.e54d9dc4.chunk.js"
   },
   {
     "revision": "3016f22c4d3f68445c6c",
     "url": "/holiday-photo-booth/static/js/1.3016f22c.chunk.js"
   },
   {
-    "revision": "9040f9abdc21d55ee6b9",
+    "revision": "e54d9dc440644685f6d1",
     "url": "/holiday-photo-booth/static/css/main.a9925b0e.chunk.css"
   },
   {
-    "revision": "5221397c52e1e3199109abc3cff88be8",
+    "revision": "e7b0dd808ebee710c6e5db42f8991e51",
     "url": "/holiday-photo-booth/index.html"
   }
 ];

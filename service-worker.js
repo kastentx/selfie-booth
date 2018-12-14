@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/holiday-photo-booth/precache-manifest.4abfc4ad45250eb924f93efe579b9b53.js"
+  "/holiday-photo-booth/precache-manifest.deba457396635b69ab68d29638eb5541.js"
 );
 
 workbox.clientsClaim();
