@@ -6,7 +6,7 @@ let imgCache = {
 }
 
 let brokenImage = imgCache.brokenImage
-brokenImage.src = "../images/codait-logo.png"
+brokenImage.src = "./images/codait-logo.png"
 brokenImage.onload = () => {
 	this.brokenImage = true
 }
