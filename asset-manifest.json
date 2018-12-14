@@ -1,13 +1,13 @@
 {
-  "main.css": "/holiday-photo-booth/static/css/main.a9925b0e.chunk.css",
-  "main.js": "/holiday-photo-booth/static/js/main.e54d9dc4.chunk.js",
-  "main.js.map": "/holiday-photo-booth/static/js/main.e54d9dc4.chunk.js.map",
-  "static/js/1.3016f22c.chunk.js": "/holiday-photo-booth/static/js/1.3016f22c.chunk.js",
-  "static/js/1.3016f22c.chunk.js.map": "/holiday-photo-booth/static/js/1.3016f22c.chunk.js.map",
-  "runtime~main.js": "/holiday-photo-booth/static/js/runtime~main.3442ee4d.js",
-  "runtime~main.js.map": "/holiday-photo-booth/static/js/runtime~main.3442ee4d.js.map",
-  "static/css/main.a9925b0e.chunk.css.map": "/holiday-photo-booth/static/css/main.a9925b0e.chunk.css.map",
-  "index.html": "/holiday-photo-booth/index.html",
-  "precache-manifest.deba457396635b69ab68d29638eb5541.js": "/holiday-photo-booth/precache-manifest.deba457396635b69ab68d29638eb5541.js",
-  "service-worker.js": "/holiday-photo-booth/service-worker.js"
+  "main.css": "/selfie-booth/static/css/main.a9925b0e.chunk.css",
+  "main.js": "/selfie-booth/static/js/main.96c12cc2.chunk.js",
+  "main.js.map": "/selfie-booth/static/js/main.96c12cc2.chunk.js.map",
+  "static/js/1.0849b84c.chunk.js": "/selfie-booth/static/js/1.0849b84c.chunk.js",
+  "static/js/1.0849b84c.chunk.js.map": "/selfie-booth/static/js/1.0849b84c.chunk.js.map",
+  "runtime~main.js": "/selfie-booth/static/js/runtime~main.fedbc9b5.js",
+  "runtime~main.js.map": "/selfie-booth/static/js/runtime~main.fedbc9b5.js.map",
+  "static/css/main.a9925b0e.chunk.css.map": "/selfie-booth/static/css/main.a9925b0e.chunk.css.map",
+  "index.html": "/selfie-booth/index.html",
+  "precache-manifest.2d88857415ffc5b059417456b2de0ec5.js": "/selfie-booth/precache-manifest.2d88857415ffc5b059417456b2de0ec5.js",
+  "service-worker.js": "/selfie-booth/service-worker.js"
 }
