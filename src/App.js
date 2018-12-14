@@ -148,34 +148,36 @@ class App extends Component {
           <AppHeader />
         </div>
         <div className='row-two'>
-          <StatusBar 
-            peopleData={ this.state.peopleData }
-            timerStatus={ this.state.timerStatus }
-            time={ this.state.time } />
-          {
-            this.state.captureData ?
-            <div className='content-wrapper'>
-              <ContentDisplay
-                selectedBG={ this.state.selectedBG || this.state.BGList[0] }
-                captureData={ this.state.captureData } 
-                peopleData={ this.state.peopleData }
-                handleReset={ this.handleReset }
-                handleDownload={ this.handleDownload } />            
-            </div>
-          :
-            <div className='content-wrapper'>
-              <Webcam
-                height='480'
-                width='640'
-                screenshotFormat='image/png'
-                className='webcam-display'
-                audio={ false }
-                ref={ this.camRef } />  
-              <div>
-                <CaptureButton handleClick={ this.startCountdown } />
+          <div className='content-card'>
+            <StatusBar 
+              peopleData={ this.state.peopleData }
+              timerStatus={ this.state.timerStatus }
+              time={ this.state.time } />
+            {
+              this.state.captureData ?
+              <div className='content-wrapper'>
+                <ContentDisplay
+                  selectedBG={ this.state.selectedBG || this.state.BGList[0] }
+                  captureData={ this.state.captureData } 
+                  peopleData={ this.state.peopleData }
+                  handleReset={ this.handleReset }
+                  handleDownload={ this.handleDownload } />            
               </div>
-            </div>
-          }
+            :
+              <div className='content-wrapper'>
+                <Webcam
+                  height='480'
+                  width='640'
+                  screenshotFormat='image/png'
+                  className='webcam-display'
+                  audio={ false }
+                  ref={ this.camRef } />  
+                <div>
+                  <CaptureButton handleClick={ this.startCountdown } />
+                </div>
+              </div>
+            }
+          </div>
         </div>
         <div className='row-three'>
           <BGSelector
