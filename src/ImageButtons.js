@@ -8,12 +8,12 @@ const ImageButtons = props => {
       <Button
         onClick={ props.handleDownload }
         className="download-button">
-        Download
+        🎁 Download
       </Button>
       <Button
         onClick={ props.handleReset }
         className="reset-button">
-        Go Again
+        🔄 Restart
       </Button>
     </div>
   )

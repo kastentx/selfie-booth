@@ -19,7 +19,7 @@ export default BGSelector
 
 const getCarouselPages = props => {
   const numImages = isNonEmpty(props.images) ? props.images.length : 0
-  const numPages = numImages % 3 !== 0 ? Math.ceil(numImages / 3) : Math.ceil(numImages / 3) + 1
+  const numPages = numImages % 4 !== 0 ? Math.ceil(numImages / 4) : Math.ceil(numImages / 4) + 1
   let pages = []
 
   if (numImages !== 0) {
@@ -30,11 +30,11 @@ const getCarouselPages = props => {
           animateIn={ true }
           animateOut={ true }>
           <div className="caroCard">
-            { getCarouselPageItems(props.images, i).map((img, i) => 
+            { getCarouselPageItems(props.images, i).map((img, j) => 
               <CarouselThumb
                 thumbProps={ props }
-                key={ i }
-                imageID={ i }
+                key={ j }
+                imageID={ (i*4)+j }
                 image={ img } />
             ) }
           </div>

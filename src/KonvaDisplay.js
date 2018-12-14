@@ -49,7 +49,7 @@ export default class KonvaDisplay extends Component {
 }
 
   downloadStage = () => {
-    this.downloadURI(this.refs.stageRef.getStage().toDataURL(), 'MAX-Studio.png')
+    this.downloadURI(this.refs.stageRef.getStage().toDataURL(), 'happy-holidays.png')
   }
 
   renderLayer = (layer, image) => {

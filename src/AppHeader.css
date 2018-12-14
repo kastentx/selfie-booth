@@ -1,0 +1,33 @@
+.titleBanner {
+  text-align: center;
+  background-color: #2f2d2e;
+  color: white;
+}
+
+div.stickyHead.row {
+  padding: 0;
+}
+
+.titleText {
+  width: 100%;
+  font-size: 2em;
+  color: red;
+  
+  /*position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999 !important;*/
+
+}
+
+.modelName {
+  color: green;
+  font-weight: bold;
+}
+
+.titleBanner > .particles, 
+.titleBanner > .particles > canvas {
+  z-index: -99 !important;
+  max-height: 8vh !important;
+  width: 100% !important;
+}

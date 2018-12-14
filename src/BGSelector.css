@@ -14,18 +14,18 @@
 
 .carousel-control {
   background-image: none !important;
-  color: darkturquoise;
+  color: green;
 }
 
 .glyphicon-chevron-left:before {
-  color: darkturquoise;
+  color: green;
 }
 
 .glyphicon-chevron-right:before { 
-  color: darkturquoise;
+  color: green;
 }
 
-.singlePageCarousel > .carousel-indicators, .carousel-control {
+.carousel-indicators, .singlePageCarousel > .carousel-control {
   display: none;
 }
 

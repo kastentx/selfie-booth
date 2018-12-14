@@ -9,7 +9,7 @@
 .imageLabel.top {
   min-height: 22px;
   font-weight: bold;
-  background-color: #2e4057;
+  background-color: #2c5794;
   text-transform: uppercase;
   color: #f5f5f5;
 }
@@ -74,8 +74,8 @@
 }
 
 .savedImageThumb:hover > .imageLabel.top {
-  background-color: #0aa;
-  color: #f5f5f5;
+  background-color: #86b5e1;
+  color: #2c5794;
 }
 
 .savedImageThumb:hover > .imageGlyph {

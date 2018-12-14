@@ -5,10 +5,11 @@ import CaptureButton from './CaptureButton'
 import StatusBar from './StatusBar'
 import { saveAs } from 'file-saver'
 import B64toBlob  from 'b64-to-blob'
-import { loadTFJSModel, cleanTFJSResponse, getScaledSize, OBJ_MAP, getBGList } from './utils'
+import { loadTFJSModel, cleanTFJSResponse, getScaledSize, OBJ_MAP, getShuffledBGs } from './utils'
 import './App.css'
 import ContentDisplay from './ContentDisplay';
 import BGSelector from './BGSelector';
+import AppHeader from './AppHeader';
 
 const initialState = {
   time: '3',
@@ -30,7 +31,7 @@ class App extends Component {
   componentDidMount = async () => {
     this.setState({
       TFModel: await loadTFJSModel(),
-      BGList: getBGList()
+      BGList: getShuffledBGs()
     })
   }
 
@@ -143,7 +144,9 @@ class App extends Component {
     return (
       <div className='app'>
         <div className='app-content'>
+        <AppHeader />
           <StatusBar 
+            peopleData={ this.state.peopleData }
             timerStatus={ this.state.timerStatus }
             time={ this.state.time } />
           {
@@ -185,6 +188,9 @@ class App extends Component {
               })
             } }
             />
+        </div>
+        <div className='snowflakes'>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
         </div>
       </div>
     )
