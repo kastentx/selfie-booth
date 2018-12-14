@@ -13,7 +13,7 @@ export default class AppHeader extends Component {
           <span className="modelName">
             <b style={ { color: 'green' } }>MAX</b> Image Segmenter 
           </span>
-          { `  Holiday Photo Booth 📸🎄` }
+          { `  Holiday Photo Booth ` }<span aria-label="holiday photo" role="img">📸🎄</span> 
         </span>
       </div>
     )
