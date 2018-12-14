@@ -2,7 +2,6 @@
   "name": "holiday-booth",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://kastentx.github.io/holiday-photo-booth",
   "dependencies": {
     "@tensorflow/tfjs": "^0.14.1",
     "b64-to-blob": "^1.2.19",
