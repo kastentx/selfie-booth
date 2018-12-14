@@ -13,7 +13,7 @@ const ImageButtons = props => {
       <Button
         onClick={ props.handleReset }
         className="reset-button">
-        🔄 Restart
+        🔄 Start Over
       </Button>
     </div>
   )

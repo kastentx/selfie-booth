@@ -1,11 +1,7 @@
 .loading-button {
-  background-color: green;
+  background-color: #86b5e1;
+  border-radius: 18px;
   color: white;
   margin-top: 1%;
   font-size: 1em;
-}
-
-.loading-button:hover {
-  color: red;
-  background-color: lightgreen;
 }

@@ -12,6 +12,7 @@ div.stickyHead.row {
   width: 100%;
   font-size: 2em;
   color: red;
+  font-weight: bold;
   
   /*position: absolute;
   top: 0;

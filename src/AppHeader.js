@@ -8,14 +8,8 @@ export default class AppHeader extends Component {
   }
   
   render() {
-    /*
-    <Particles
-          className='particles'
-          params={ particleParams } />
-    */
     return ( 
       <div className="titleBanner">
-
         <span className="titleText">
           <span className="modelName">
             <b style={ { color: 'green' } }>MAX</b> Image Segmenter 
