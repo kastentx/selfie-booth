@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/selfie-booth/precache-manifest.2d88857415ffc5b059417456b2de0ec5.js"
+  "/selfie-booth/precache-manifest.0231721646165f59170d361cf89516a3.js"
 );
 
 workbox.clientsClaim();

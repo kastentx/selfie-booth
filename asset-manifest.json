@@ -1,13 +1,13 @@
 {
   "main.css": "/selfie-booth/static/css/main.a9925b0e.chunk.css",
-  "main.js": "/selfie-booth/static/js/main.96c12cc2.chunk.js",
-  "main.js.map": "/selfie-booth/static/js/main.96c12cc2.chunk.js.map",
+  "main.js": "/selfie-booth/static/js/main.f7e2151c.chunk.js",
+  "main.js.map": "/selfie-booth/static/js/main.f7e2151c.chunk.js.map",
   "static/js/1.0849b84c.chunk.js": "/selfie-booth/static/js/1.0849b84c.chunk.js",
   "static/js/1.0849b84c.chunk.js.map": "/selfie-booth/static/js/1.0849b84c.chunk.js.map",
   "runtime~main.js": "/selfie-booth/static/js/runtime~main.fedbc9b5.js",
   "runtime~main.js.map": "/selfie-booth/static/js/runtime~main.fedbc9b5.js.map",
   "static/css/main.a9925b0e.chunk.css.map": "/selfie-booth/static/css/main.a9925b0e.chunk.css.map",
   "index.html": "/selfie-booth/index.html",
-  "precache-manifest.2d88857415ffc5b059417456b2de0ec5.js": "/selfie-booth/precache-manifest.2d88857415ffc5b059417456b2de0ec5.js",
+  "precache-manifest.0231721646165f59170d361cf89516a3.js": "/selfie-booth/precache-manifest.0231721646165f59170d361cf89516a3.js",
   "service-worker.js": "/selfie-booth/service-worker.js"
 }
