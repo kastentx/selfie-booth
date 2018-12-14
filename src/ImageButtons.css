@@ -1,6 +1,18 @@
 .reset-button, .download-button {
   background-color: green;
-  color: red;
-  margin: 2%;
+  color: lightcoral;
+  margin-top: 1%;
   font-size: 1em;
+}
+
+.reset-button:hover, .download-button:hover {
+  color: red;
+  background-color: lightgreen;
+}
+
+.image-button-bar {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-content: center;
 }

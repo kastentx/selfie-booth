@@ -2,13 +2,13 @@ import React, { Component } from 'react'
 import * as tf from '@tensorflow/tfjs'
 import Webcam from 'react-webcam'
 import CaptureButton from './CaptureButton'
-import ImageButtons from './ImageButtons'
 import StatusBar from './StatusBar'
 import { saveAs } from 'file-saver'
 import B64toBlob  from 'b64-to-blob'
-import { loadTFJSModel, cleanTFJSResponse, getScaledSize, OBJ_MAP } from './utils'
+import { loadTFJSModel, cleanTFJSResponse, getScaledSize, OBJ_MAP, getBGList } from './utils'
 import './App.css'
 import ContentDisplay from './ContentDisplay';
+import BGSelector from './BGSelector';
 
 const initialState = {
   time: '3',
@@ -29,7 +29,8 @@ class App extends Component {
 
   componentDidMount = async () => {
     this.setState({
-      TFModel: await loadTFJSModel()
+      TFModel: await loadTFJSModel(),
+      BGList: getBGList()
     })
   }
 
@@ -149,17 +150,14 @@ class App extends Component {
             this.state.captureData ?
             <div className='content-wrapper'>
               <ContentDisplay
+                selectedBG={ this.state.selectedBG || this.state.BGList[0] }
                 captureData={ this.state.captureData } 
-                peopleData={ this.state.peopleData } />            
-              <div>
-                <ImageButtons 
-                  captureData={ this.state.captureData }
-                  handleReset={ this.handleReset }
-                  handleDownload={ this.handleDownload } />
-              </div>
+                peopleData={ this.state.peopleData }
+                handleReset={ this.handleReset }
+                handleDownload={ this.handleDownload } />            
             </div>
           :
-            <div>
+            <div className='content-wrapper'>
               <Webcam
                 height='480'
                 width='640'
@@ -167,7 +165,9 @@ class App extends Component {
                 className='webcam-display'
                 audio={ false }
                 ref={ this.camRef } />  
-              <CaptureButton handleClick={ this.startCountdown } />
+              <div>
+                <CaptureButton handleClick={ this.startCountdown } />
+              </div>
             </div>
           }
 
@@ -175,7 +175,16 @@ class App extends Component {
             ref={ this.canvasRef }
             style={ { display: 'none' } }>
           </canvas>  
-
+          
+          <BGSelector
+            images={ this.state.BGList } 
+            setSelectedBG={ selectedBGKey => {
+              console.log(selectedBGKey)
+              this.setState({ 
+                selectedBG: this.state.BGList[selectedBGKey] 
+              })
+            } }
+            />
         </div>
       </div>
     )

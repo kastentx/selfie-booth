@@ -1,0 +1,11 @@
+.loading-button {
+  background-color: green;
+  color: lightcoral;
+  margin-top: 1%;
+  font-size: 1em;
+}
+
+.loading-button:hover {
+  color: red;
+  background-color: lightgreen;
+}

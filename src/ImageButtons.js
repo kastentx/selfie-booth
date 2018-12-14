@@ -4,7 +4,7 @@ import './ImageButtons.css'
 
 const ImageButtons = props => {
   return (
-    <div>
+    <div className='image-button-bar'>
       <Button
         onClick={ props.handleDownload }
         className="download-button">

@@ -1,0 +1,39 @@
+.caroCard {
+  height: 25vh;
+  padding: .5%;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.singlePageCarousel, .multiPageCarousel {
+  width: 100%;
+}
+
+.carousel-control {
+  background-image: none !important;
+  color: darkturquoise;
+}
+
+.glyphicon-chevron-left:before {
+  color: darkturquoise;
+}
+
+.glyphicon-chevron-right:before { 
+  color: darkturquoise;
+}
+
+.singlePageCarousel > .carousel-indicators, .carousel-control {
+  display: none;
+}
+
+.carousel-indicators > li {
+  background-color: #2e4057;
+  border-color: #0aa;
+}
+.carousel-indicators > li.active {
+  background-color: cyan;
+  border-color: cyan;
+}

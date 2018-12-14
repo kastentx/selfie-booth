@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Img from './Img'
+import ImageButtons from './ImageButtons'
 import { Stage, Layer } from 'react-konva'
 import './KonvaDisplay.css'
 
@@ -47,9 +48,8 @@ export default class KonvaDisplay extends Component {
     document.body.removeChild(link)
 }
 
-  downloadStage = () => {  
-    const dataURL = this.stageRef._stage.toDataURL()
-    this.downloadURI(dataURL, 'MAX-Studio.png')
+  downloadStage = () => {
+    this.downloadURI(this.refs.stageRef.getStage().toDataURL(), 'MAX-Studio.png')
   }
 
   renderLayer = (layer, image) => {
@@ -73,7 +73,7 @@ export default class KonvaDisplay extends Component {
       <div>
         <Stage
           className="konvaMain"
-          ref={ ref => this.stageRef = ref } 
+          ref='stageRef' 
           height={ 480 }
           width={ 640 }
           >
@@ -82,6 +82,11 @@ export default class KonvaDisplay extends Component {
             { frontImage ? this.renderLayer('front', frontImage) : null }
           </Layer>
         </Stage>
+        <ImageButtons 
+          stageRef={ this.stageRef }
+          captureData={ this.props.captureData }
+          handleReset={ this.props.handleReset }
+          handleDownload={ this.downloadStage } />
       </div>
     )
   }

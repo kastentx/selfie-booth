@@ -1,6 +1,10 @@
 .capture-button {
   background-color: green;
-  color: red;
-  margin: 2%;
+  color: lightcoral;
   font-size: 1em;
+}
+
+.capture-button:hover {
+  color: red;
+  background-color: lightgreen;
 }
