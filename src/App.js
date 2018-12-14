@@ -144,7 +144,10 @@ class App extends Component {
     return (
       <div className='app'>
         <div className='app-content'>
-        <AppHeader />
+        <div className='row-one'>
+          <AppHeader />
+        </div>
+        <div className='row-two'>
           <StatusBar 
             peopleData={ this.state.peopleData }
             timerStatus={ this.state.timerStatus }
@@ -173,12 +176,8 @@ class App extends Component {
               </div>
             </div>
           }
-
-          <canvas 
-            ref={ this.canvasRef }
-            style={ { display: 'none' } }>
-          </canvas>  
-          
+        </div>
+        <div className='row-three'>
           <BGSelector
             images={ this.state.BGList } 
             setSelectedBG={ selectedBGKey => {
@@ -189,10 +188,16 @@ class App extends Component {
             } }
             />
         </div>
-        <div className='snowflakes'>
-          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-        </div>
+        
       </div>
+      <canvas 
+          ref={ this.canvasRef }
+          style={ { display: 'none' } }>
+      </canvas>  
+      <div className='snowflakes'>
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </div>
     )
   }
 }
